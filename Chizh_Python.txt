@@ -1,0 +1,31 @@
+def main():
+    # Step 1: Input a number
+    number = int(input("Enter a number: "))
+    if number > 7:
+        print("Hello")
+
+    # Step 2: Input a name
+    name = input("Enter a name: ")
+    if name == "John":
+        print("Hello, John")
+    else:
+        print("There is no such name")
+
+    # Step 3: Input a numeric array
+    size = int(input("Enter the size of the array: "))
+    array = []
+    
+    print("Enter array elements:")
+    for i in range(size):
+        element = int(input(f"Element {i + 1}: "))
+        array.append(element)
+
+    # Output elements that are multiples of 3
+    print("Elements of the array that are multiples of 3:")
+    for item in array:
+        if item % 3 == 0:
+            print(item)
+
+# Call the main function to run the program
+if name == "main":
+    main()
